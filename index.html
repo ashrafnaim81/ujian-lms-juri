@@ -1,4 +1,8 @@
 <!doctype html>
 <html lang="ms"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ujian LMS Juri</title>
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#111A30">
 <style>body{font-family:system-ui,Arial;background:#0D1220;color:#EDF2FC;display:grid;place-items:center;min-height:100vh;margin:0;text-align:center}h1{color:#3DDC84}button{background:#3DDC84;color:#0D1220;border:0;border-radius:10px;padding:14px 22px;font-size:18px;font-weight:700;cursor:pointer}p{color:#9BA9C8}</style></head>
-<body><div><h1>Ujian Aktiviti 3 Berjaya</h1><p>App ini diterbitkan melalui GitHub dan Vercel.</p><button onclick="document.getElementById('k').textContent=Number(document.getElementById('k').textContent)+1">Tekan saya</button><p>Kiraan: <span id="k">0</span></p></div></body></html>
+<body><div><h1>Ujian Aktiviti 3 Berjaya</h1><p>App ini diterbitkan melalui GitHub dan Vercel.</p><button onclick="document.getElementById(String.fromCharCode(107)).textContent=Number(document.getElementById(String.fromCharCode(107)).textContent)+1">Tekan saya</button><p>Kiraan: <span id="k">0</span></p></div>
+<script>if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js");});}</script>
+</body></html>
